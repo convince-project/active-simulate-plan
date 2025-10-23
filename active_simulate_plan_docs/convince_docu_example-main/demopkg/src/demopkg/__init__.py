@@ -1,1 +1,0 @@
-"""Module demopkg. It is there to show how to document a module."""
