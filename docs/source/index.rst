@@ -1,5 +1,5 @@
 Welcome to the ACTIVE-PLAN and SIMULATE-PLAN documentation!
-===========================================
+============================================================
 
 Welcome to the documentation of ACTIVE-PLAN and SIMULATE-PLAN an online tools used for handling unknown anomalies. The input to ACTIVE/SIMULATE-PLAN is current state information, a list of available actions in JSON format. The output is a plan also in JSON format. 
 

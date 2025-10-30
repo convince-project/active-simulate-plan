@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Add your identification/ directory to Python path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'src' / 'active-plan' / 'identification'))
+
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
