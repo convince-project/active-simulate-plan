@@ -11,7 +11,7 @@ src/active-plan/
     ├── state_manager.py       # Symbolic state tracking and updates
     ├── interventions.py       # Intervention parsing and application
     ├── reward_shaper.py       # Reward computation
-    └── test_system.py         # Integration tests
+   
 
 config/
 ├── scenario1.json             # Block misalignment scenario
@@ -77,17 +77,6 @@ Total iterations: 237
 Total rollouts evaluated: 238
 Results saved to: results_scenario1.json
 ```
-
-## Running Unit Tests
-
-To run the integration tests:
-
-```bash
-cd src/active-plan/identification
-python3 test_system.py
-```
-
-This verifies that the core MCTS, state management, and intervention application modules work correctly.
 
 ## API and Tutorials
 
