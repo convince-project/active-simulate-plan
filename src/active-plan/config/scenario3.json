@@ -1,0 +1,24 @@
+{
+   "intv_space": {
+  "B1": ["left,0.01", "left,0.02", "left,0.03", "right,0.01", "right,0.02", "right,0.03"],
+  "B2": ["left,0.01", "left,0.02", "left,0.03", "right,0.01", "right,0.02", "right,0.03"],
+  "Swap": ["B1, B2", "A1, A2"]
+},
+
+    "object_priority": ["Swap", "B1", "B2"],
+    "symbolic_goal": [
+       "On(A1, B1)",
+       "On(A1, B2)",
+       "On(B1, A2)",
+       "On(B2, A2)"
+    ],
+    "reward_shaping": {
+      "shift_bonus": 0.00,
+      "depth_penalty": 0.00,
+      "teleport_bonus": 0.0,
+      "obstruction_penalty": 0.00
+    },
+    "termination_threshold": 1.0,
+    "max_rollout_depth": 3
+  }
+  

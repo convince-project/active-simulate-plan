@@ -1,0 +1,33 @@
+{
+   "intv_space": {
+   "11": [
+    "left,0.01", "left,0.05", "left,0.1",
+    "forward,0.01","forward,0.05", "forward,0.1",
+    "right,0.01","right,0.05", "right,0.1",
+    "back,0.01","back,0.05", "back,0.1"
+  ],
+   "12": [
+    "left,0.01", "left,0.05", "left,0.1",
+    "forward,0.01","forward,0.05", "forward,0.1",
+    "right,0.01","right,0.05", "right,0.1",
+    "back,0.01","back,0.05", "back,0.1"
+  ],
+  "9": ["pick-top", "pick-side", "place-top, 1", "place-side, 1", "place-top, 2", "place-side, 2"],
+  "10": ["pick-top", "pick-side","place-top, 1", "place-side, 1", "place-top, 2", "place-side, 2"]
+},
+
+    "object_priority": ["9", "10","12", "11"],
+    "symbolic_goal": [
+      "On(9, Goal_1)",
+      "On(10, Goal_2)"
+    ],
+    "reward_shaping": {
+      "shift_bonus": 0.00,
+      "depth_penalty": 0.0,
+      "teleport_bonus": 0.0,
+      "obstruction_penalty": 0.00
+    },
+    "termination_threshold": 3.0,
+    "max_rollout_depth": 6
+  }
+  

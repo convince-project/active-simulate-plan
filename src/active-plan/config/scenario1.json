@@ -1,0 +1,44 @@
+{
+   "intv_space": {
+  "1": [
+    "left,0.005", "left,0.01", "left,0.015", "left,0.02", "left,0.025", "left,0.03",
+    "forward,0.005", "forward,0.01", "forward,0.015", "forward,0.02", "forward,0.025", "forward,0.03",
+    "right,0.005", "right,0.01", "right,0.015", "right,0.02", "right,0.025", "right,0.03",
+    "back,0.005", "back,0.01", "back,0.015", "back,0.02", "back,0.025", "back,0.03"
+  ],
+  "2": [
+    "left,0.005", "left,0.01", "left,0.015", "left,0.02", "left,0.025", "left,0.03",
+    "forward,0.005", "forward,0.01", "forward,0.015", "forward,0.02", "forward,0.025", "forward,0.03",
+    "right,0.005", "right,0.01", "right,0.015", "right,0.02", "right,0.025", "right,0.03",
+    "back,0.005", "back,0.01", "back,0.015", "back,0.02", "back,0.025", "back,0.03"
+  ],
+  "3": [
+    "left,0.005", "left,0.01", "left,0.015", "left,0.02", "left,0.025", "left,0.03",
+    "forward,0.005", "forward,0.01", "forward,0.015", "forward,0.02", "forward,0.025", "forward,0.03",
+    "right,0.005", "right,0.01", "right,0.015", "right,0.02", "right,0.025", "right,0.03",
+    "back,0.005", "back,0.01", "back,0.015", "back,0.02", "back,0.025", "back,0.03"
+  ],
+  "4": [
+    "left,0.005", "left,0.01", "left,0.015", "left,0.02", "left,0.025", "left,0.03",
+    "forward,0.005", "forward,0.01", "forward,0.015", "forward,0.02", "forward,0.025", "forward,0.03",
+    "right,0.005", "right,0.01", "right,0.015", "right,0.02", "right,0.025", "right,0.03",
+    "back,0.005", "back,0.01", "back,0.015", "back,0.02", "back,0.025", "back,0.03"
+  ]
+},
+
+    "object_priority": ["1","2","3","4"],
+    "symbolic_goal": [
+      "On(14,4)",
+      "On(2,1)",
+      "On(3,2)",
+      "On(4,3)"
+    ],
+    "reward_shaping": {
+      "shift_bonus": 0.00,
+      "depth_penalty": 0.00,
+      "teleport_bonus": 0.0,
+      "obstruction_penalty": 0.00
+    },
+    "termination_threshold": 1.0,
+    "max_rollout_depth": 4
+  }
