@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from state_manager import StateManager
 from interventions import InterventionApplier
 from reward_shaper import RewardShaper
+import traceback
 
 
 def test_state_manager():
@@ -54,7 +55,7 @@ def test_state_manager():
     misaligned_after = state_mgr.check_misalignment('1', '0')
     print(f"  Object 1 after shift: {'MISALIGNED' if misaligned_after else 'aligned'}")
     
-    print("\n✓ StateManager test passed!")
+    print("\n StateManager test passed!")
     return state_mgr
 
 
@@ -79,7 +80,7 @@ def test_intervention_applier(state_mgr):
     misaligned = state_mgr.check_misalignment('2', '0')
     print(f"  Object 2 alignment: {'MISALIGNED' if misaligned else 'aligned'}")
     
-    print("\n✓ InterventionApplier test passed!")
+    print("\n InterventionApplier test passed!")
     return applier
 
 
@@ -104,7 +105,7 @@ def test_reward_shaper():
     final_rew = shaper.final_reward(curr_rels, interventions)
     print(f"Final reward (2 interventions, 2/3 goals): {final_rew:.3f}")
     
-    print("\n✓ RewardShaper test passed!")
+    print("\n RewardShaper test passed!")
     return shaper
 
 
@@ -121,14 +122,14 @@ def main():
         shaper = test_reward_shaper()
         
         print("\n" + "=" * 60)
-        print("✓ ALL TESTS PASSED!")
+        print(" ALL TESTS PASSED!")
         print("=" * 60)
         print("\nYou can now run the full MCTS with:")
         print("  python mcts_new.py")
         
     except Exception as e:
-        print(f"\n✗ TEST FAILED: {e}")
-        import traceback
+        print(f"\n TEST FAILED: {e}")
+    
         traceback.print_exc()
         return 1
     
