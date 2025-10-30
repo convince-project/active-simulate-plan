@@ -166,10 +166,4 @@ Example:
 * TAMP-based recovery planning
 * Real robot execution interface
 
-## Maintainer
 
-This repository is maintained by:
-
-| | | |
-|:---:|:---:|:---:|
-| Yazz Warsame | [@username](https://github.com/yazzwarsame)  |
