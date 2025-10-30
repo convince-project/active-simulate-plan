@@ -45,7 +45,7 @@ The MCTS planner will print progress as it searches:
    --- Iteration 237 ---
    [ITER 237] reward=1.000, depth=4, interventions=[('1', 'forward,0.01'), ...]
    
-   ✓ Success! Found solution at iteration 237
+   Success! Found solution at iteration 237
 
 Once complete, you'll see the final intervention sequence:
 
