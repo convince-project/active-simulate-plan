@@ -2,6 +2,8 @@
 
 This repo contains the source code for ACTIVE-SIMULATE-PLAN, a simulation-free implementation of Monte Carlo Tree Search (MCTS) for finding sequences of causal interventions that transform an initial symbolic state into a goal state for unknown anomalies.
 
+# ACTIVE-PLAN
+
 ## Architecture
 
 ```
@@ -156,3 +158,4 @@ Example:
 * Real robot execution interface
 
 
+# SIMULATE-PLAN
