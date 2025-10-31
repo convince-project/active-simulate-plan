@@ -69,12 +69,28 @@ Upon running `mcts.py`, the system will:
 TODO
 
 ### Quick Start
-TODO
+Clone the repository and run:
+
+```bash
+cd src/active-plan/recovery
+python3 planner.py
+```
+
+When prompted, select a scenario (default is Scenario 1):
+
+```text
+Select scenario (1-3, or press Enter for scenario1): 1
+```
 
 ## Running Examples
-TODO
 
+Upon running `planner.py`, the system will:
 
+1. Load the initial state `active-plan/config/symbolic_state.json` 
+2. Load the goal state `active-plan/config/scenario1.json`
+3. Load the intervention (output from mcts.py)  `identification/results_scenario1.json`
+4. Execute the plan using Fast-Downwards [add citation]
+5. Save results to `plan_scenario_1.json`
 
 ## API and Tutorials
 
