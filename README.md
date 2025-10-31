@@ -72,7 +72,7 @@ TODO
 Clone the repository and run:
 
 ```bash
-cd src/active-plan/recovery
+cd src/simulate-plan/recovery
 python3 planner.py
 ```
 
