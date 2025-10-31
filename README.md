@@ -51,7 +51,7 @@ When prompted, select a scenario (default is Scenario 1):
 Select scenario (1-3, or press Enter for scenario1): 1
 ```
 
-The planner will execute MCTS to find a sequence of interventions that achieves the goal state.
+ACTIVE-PLAN will execute MCTS to find a sequence of interventions that achieves the goal state.
 
 ## Running Examples
 
@@ -81,6 +81,7 @@ When prompted, select a scenario (default is Scenario 1):
 ```text
 Select scenario (1-3, or press Enter for scenario1): 1
 ```
+SIMULATE-PLAN will execute Fast-Downward using the interventions to find a sequence of actions that reaches the goal state, and then output the plan.
 
 ## Running Examples
 
