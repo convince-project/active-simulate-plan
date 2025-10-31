@@ -97,5 +97,11 @@ Upon running `planner.py`, the system will:
 
 The documentation for ACTIVE-SIMULATE-PLAN can be found [here](https://convince-project.github.io/active-simulate-plan), where you can read more about the API and find tutorials.
 
+## Maintainer
 
+This repository is maintained by:
+
+| | | |
+|:---:|:---:|:---:|
+| Yazz Warsame | [YazzWarsame](https://github.com/yazzwarsame) | [yazzwarsame@gmail.com](mailto:yazzwarsame@gmail.com) |
 
