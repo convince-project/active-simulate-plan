@@ -62,29 +62,6 @@ Upon running `mcts.py`, the system will:
 3. Execute MCTS search to identify corrective interventions
 4. Save results to `results_scenario1.json`
 
-## Features
-
-* **Simulation-free**: Operates purely on symbolic state updates and geometric checks
-* **Configurable**: JSON-based scenario and state definitions
-* **Modular**: Clean separation between MCTS, state management, and interventions
-* **Extensible**: Easy to add new intervention types and reward functions
-* **Documented**: Comprehensive API documentation with Google-style docstrings
-
-## Project Status
-
-**Current Implementation:**
-
-* Scenario 1: Block misalignment identification and correction
-* Scenario 2: In development
-* Scenario 3: In development
-
-**Planned Features:**
-
-* GPU-parallelized MCTS for faster search
-* Integration with physics simulation (Isaac Lab)
-* TAMP-based recovery planning
-* Real robot execution interface
-
 
 # SIMULATE-PLAN
 
@@ -97,11 +74,7 @@ TODO
 ## Running Examples
 TODO
 
-## Features
-TODO
 
-## Project Status
-TODO
 
 ## API and Tutorials
 
