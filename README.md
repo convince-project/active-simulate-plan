@@ -103,5 +103,5 @@ This repository is maintained by:
 
 | | | |
 |:---:|:---:|:---:|
-| Yazz Warsame | [YazzWarsame](https://github.com/yazzwarsame) | [yazzwarsame@gmail.com](mailto:yazzwarsame@gmail.com) |
+| Yazz Warsame | [yazz](https://github.com/yazzwarsame) | [yazzwarsame@gmail.com](mailto:yazzwarsame@gmail.com) |
 
