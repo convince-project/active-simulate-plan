@@ -65,33 +65,70 @@ Upon running `mcts.py`, the system will:
 
 # SIMULATE-PLAN
 
+SIMULATE-PLAN uses PDDL planning to generate recovery actions for geometrically misaligned blocks identified by MCTS.
+
 ## Architecture
-TODO
+```
+src/simulate-plan/
+└── recovery/
+    ├── planner.py           # PDDL recovery planner
+    ├── pddl_builder.py      # PDDL problem generator 
+    ├── plan_parser.py       # Fast Downward output parser
+    └── domains/
+        └── domain_s1.pddl   # PDDL domain for block stacking
+```
 
-### Quick Start
-Clone the repository and run:
+## Dependencies
 
+SIMULATE-PLAN uses only Python standard library modules:
+
+* `json` - State and configuration parsing
+* `sys` - System operations
+* `subprocess` - Fast Downward execution
+* `pathlib` - File path handling
+* `re` - Pattern matching for plan parsing
+
+**External Dependency:**
+
+* [Fast Downward](https://github.com/aibasel/downward) - Classical PDDL planner
+
+### Installing Fast Downward
+```bash
+# Clone Fast Downward
+git clone https://github.com/aibasel/downward.git
+cd downward
+
+# Build the planner
+./build.py
+
+# Place in simulate-plan directory
+mv downward /path/to/active-simulate-plan/src/simulate-plan/
+```
+
+**Citation:** Helmert, M. (2006). The Fast Downward Planning System. *Journal of Artificial Intelligence Research*, 26, 191-246.
+
+## Quick Start
 ```bash
 cd src/simulate-plan/recovery
 python3 planner.py
 ```
 
 When prompted, select a scenario (default is Scenario 1):
-
 ```text
 Select scenario (1-3, or press Enter for scenario1): 1
 ```
-SIMULATE-PLAN executes Fast-Downward using the interventions (`mcts.py`)  to find a sequence of actions that reaches the goal state, and then output the plan.
 
 ## Running Examples
 
 Upon running `planner.py`, the system will:
 
-1. Load the initial state `active-plan/config/symbolic_state.json` 
-2. Load the goal state `active-plan/config/scenario1.json`
-3. Load the intervention (output from mcts.py)  `identification/results_scenario1.json`
-4. Execute the plan using Fast-Downwards [add citation]
-5. Save results to `plan_scenario_1.json`
+1. Load the initial state from `active-plan/config/symbolic_state.json`
+2. Load the goal state from `active-plan/config/scenario1.json`
+3. Load MCTS interventions from `active-plan/identification/results_scenario1.json`
+4. Generate PDDL problem with target predicates for misaligned blocks
+5. Execute Fast Downward planner to find optimal action sequence
+6. Parse and display the recovery plan
+7. Save results to `fd_output/plan_scenario1.json`
 
 ## API and Tutorials
 
