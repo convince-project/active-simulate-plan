@@ -14,7 +14,13 @@ ACTIVE-PLAN
    reward_shaper
 
 
+SIMULATE-PLAN
+---------------------------------------------------
 
+.. autosummary::
+   :toctree: API
+   :template: custom-module-template.rst
 
-
- 
+   planner
+   pddl_builder
+   plan_parser

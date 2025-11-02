@@ -1,14 +1,15 @@
 import sys
 from pathlib import Path
 
-# Add your identification/ directory to Python path
+# Add active-plan and simulate-plan directories to Python path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'src' / 'active-plan' / 'identification'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'src' / 'simulate-plan' / 'recovery'))
 
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
 
-project = 'ACTIVE-PLAN and SIMULATE-PLAN'
+project = 'ACTIVE-SIMULATE-PLAN'
 copyright = '2024'
 author = 'CONVINCE Consortium'
 
