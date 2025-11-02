@@ -28,10 +28,11 @@
 
     "object_priority": ["1","2","3","4"],
     "symbolic_goal": [
-      "On(14,4)",
-      "On(2,1)",
-      "On(3,2)",
-      "On(4,3)"
+        "On(1, 0)",
+        "On(2, 1)",
+        "On(3, 2)",
+        "On(4, 3)",
+        "On(0, Goal_1)"
     ],
     "reward_shaping": {
       "shift_bonus": 0.00,

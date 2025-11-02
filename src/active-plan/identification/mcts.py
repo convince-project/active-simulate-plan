@@ -569,7 +569,7 @@ def main():
         intervention_space=scenario_config["intv_space"],
         max_rollout_depth=scenario_config["max_rollout_depth"],
         termination_threshold=scenario_config["termination_threshold"],
-        exploration_constant=0.0
+        exploration_constant=0
     )
     
     # Run MCTS search
@@ -593,7 +593,7 @@ def main():
                   f"aligned={is_aligned} (threshold={debug_mgr.alignment_threshold}m)")
     print()
     
-    iterations = 30000  # Can make this configurable
+    iterations = 300000  # Can make this configurable
     result_interventions, final_iter = planner.search_resolution(iterations=iterations)
     
     # Display results

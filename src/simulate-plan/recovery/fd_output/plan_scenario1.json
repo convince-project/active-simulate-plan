@@ -1,0 +1,70 @@
+[
+  {
+    "action": "unstack",
+    "args": [
+      "D",
+      "C"
+    ]
+  },
+  {
+    "action": "putdown-to-table",
+    "args": [
+      "D"
+    ]
+  },
+  {
+    "action": "unstack",
+    "args": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "action": "stack",
+    "args": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "action": "unstack",
+    "args": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "action": "stack-target",
+    "args": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "action": "unstack",
+    "args": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "action": "stack-target",
+    "args": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "action": "pickup-from-table",
+    "args": [
+      "D"
+    ]
+  },
+  {
+    "action": "stack-target",
+    "args": [
+      "D",
+      "C"
+    ]
+  }
+]
