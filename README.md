@@ -4,7 +4,17 @@ This repo contains the source code for ACTIVE-SIMULATE-PLAN, a simulation-free i
 
 ## Installation
 
-ACTIVE-SIMULATE-PLAN has been tested on Ubuntu 22.04 LTS with Python 3.10.
+ACTIVE-SIMULATE-PLAN has been tested on Ubuntu 22.04 LTS with Python 3.10. To install, run:
+```
+git clone --recurse-submodules https://github.com/convince-project/active-simulate-plan
+cd active-simulate-plan/src/simulate-plan/downward
+./build.py
+```
+
+### Dependencies
+ACTIVE-SIMULATE-PLAN uses [Fast Downward](https://github.com/aibasel/downward) for PDDL planning.
+This is included as a submodule and is handled by the above steps.
+**Citation:** Helmert, M. (2006). The Fast Downward Planning System. *Journal of Artificial Intelligence Research*, 26, 191-246.
 
 # ACTIVE-PLAN
 
@@ -28,20 +38,7 @@ config/
 └── symbolic_state.json        # Initial world state
 ```
 
-### Dependencies
-
-ACTIVE-PLAN uses only Python standard library modules and requires **no external dependencies**:
-
-* `math` - Mathematical operations
-* `random` - Random rollout policy
-* `json` - Configuration and state file parsing
-* `pathlib` - File path handling
-* `copy` - State copying during simulation
-
-
 ### Quick Start
-
-Clone the repository and run:
 
 ```bash
 cd src/active-plan/identification
@@ -80,35 +77,6 @@ src/simulate-plan/
     └── domains/
         └── domain_s1.pddl   # PDDL domain for block stacking
 ```
-
-## Dependencies
-
-SIMULATE-PLAN uses only Python standard library modules:
-
-* `json` - State and configuration parsing
-* `sys` - System operations
-* `subprocess` - Fast Downward execution
-* `pathlib` - File path handling
-* `re` - Pattern matching for plan parsing
-
-**External Dependency:**
-
-* [Fast Downward](https://github.com/aibasel/downward) - Classical PDDL planner
-
-### Installing Fast Downward
-```bash
-# Clone Fast Downward
-git clone https://github.com/aibasel/downward.git
-cd downward
-
-# Build the planner
-./build.py
-
-# Place in simulate-plan directory
-mv downward /path/to/active-simulate-plan/src/simulate-plan/
-```
-
-**Citation:** Helmert, M. (2006). The Fast Downward Planning System. *Journal of Artificial Intelligence Research*, 26, 191-246.
 
 ## Quick Start
 ```bash

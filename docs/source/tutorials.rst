@@ -363,27 +363,6 @@ This is the "Target Trick" - a symbolic proxy for geometric precision that bridg
 Configuration
 ~~~~~~~~~~~~~
 
-Fast Downward Installation
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-SIMULATE-PLAN requires Fast Downward to be installed. Clone and build it:
-
-.. code-block:: bash
-
-   # Clone Fast Downward
-   git clone https://github.com/aibasel/downward.git
-   cd downward
-   
-   # Build the planner
-   ./build.py
-   
-   # Move to simulate-plan directory
-   mv downward /path/to/active-simulate-plan/src/simulate-plan/
-
-For more details, see the `Fast Downward documentation <http://www.fast-downward.org/>`_.
-
-**Citation:** Helmert, M. (2006). The Fast Downward Planning System. *Journal of Artificial Intelligence Research*, 26, 191-246.
-
 PDDL Domain Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
