@@ -1,0 +1,3 @@
+[submodule "src/simulate-plan/downward"]
+	path = src/simulate-plan/downward
+	url = https://github.com/aibasel/downward.git
