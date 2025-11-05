@@ -14,6 +14,7 @@ cd active-simulate-plan/src/simulate-plan/downward
 ### Dependencies
 ACTIVE-SIMULATE-PLAN uses [Fast Downward](https://github.com/aibasel/downward) for PDDL planning.
 This is included as a submodule and is handled by the above steps.
+
 **Citation:** Helmert, M. (2006). The Fast Downward Planning System. *Journal of Artificial Intelligence Research*, 26, 191-246.
 
 # ACTIVE-PLAN
