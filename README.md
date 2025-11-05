@@ -6,17 +6,9 @@ This repo contains the source code for ACTIVE-SIMULATE-PLAN, a simulation-free i
 
 ACTIVE-SIMULATE-PLAN has been tested on Ubuntu 22.04 LTS with Python 3.10.
 
-### Dependencies
-
-ACTIVE-SIMULATE-PLAN uses only Python standard library modules and requires **no external dependencies**:
-
-* `math` - Mathematical operations
-* `random` - Random rollout policy
-* `json` - Configuration and state file parsing
-* `pathlib` - File path handling
-* `copy` - State copying during simulation
-
 # ACTIVE-PLAN
+
+ACTIVE-PLAN identifies anomalies by applying causal interventions with Monte Carlo Tree Search (MCTS) to run “what-if” analyses.
 
 ## Architecture
 
@@ -35,6 +27,17 @@ config/
 ├── scenario3.json             # (to be added)
 └── symbolic_state.json        # Initial world state
 ```
+
+### Dependencies
+
+ACTIVE-PLAN uses only Python standard library modules and requires **no external dependencies**:
+
+* `math` - Mathematical operations
+* `random` - Random rollout policy
+* `json` - Configuration and state file parsing
+* `pathlib` - File path handling
+* `copy` - State copying during simulation
+
 
 ### Quick Start
 
