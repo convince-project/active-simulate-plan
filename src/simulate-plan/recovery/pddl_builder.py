@@ -175,6 +175,10 @@ class PDDLBuilder:
         
         # Parse current state
         on_current, ontable_current, clear_current = self.parse_relationships(current_state)
+
+        # Remove TABLE from sets (it's not a block object)
+        ontable_current.discard('TABLE')
+        clear_current.discard('TABLE')
         
         # Parse goal state (provided as list of strings)
         goal_dict = {'relationships': goal_state}
@@ -182,6 +186,8 @@ class PDDLBuilder:
         
         # Build support map for goal state
         supports_goal = self.build_support_map(on_goal, ontable_goal)
+
+
         
         # Collect all blocks (exclude TABLE)
         all_blocks = set()
@@ -195,9 +201,11 @@ class PDDLBuilder:
                 all_blocks.add(lower)
         all_blocks |= ontable_current
         all_blocks |= ontable_goal
-        all_blocks.discard('TABLE')
-        
+        all_blocks.discard('TABLE')  # Remove TABLE from blocks set
+
         blocks = sorted(all_blocks)
+        
+    
         
         # Build initial state predicates
         init_lines = []
@@ -238,10 +246,11 @@ class PDDLBuilder:
         for upper, lower in on_goal:
             goal_lines.append(f"(On {upper} {lower})")
         
-        # Add goal OnTable relationships
+        # Add goal OnTable relationships (skip TABLE itself)
         for block in sorted(ontable_goal):
-            goal_lines.append(f"(OnTable {block})")
-        
+            if block != 'TABLE':  # Add this check
+                goal_lines.append(f"(OnTable {block})")
+                
         # Require hand to be empty at end
         goal_lines.append("(HandEmpty)")
         
@@ -271,5 +280,5 @@ class PDDLBuilder:
         
         pddl_lines.append("  ))")
         pddl_lines.append(")")
-        
+
         return "\n".join(pddl_lines)
